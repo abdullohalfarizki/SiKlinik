@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --color-modal: #010200;
+    --color-batal: #c90000;
+    --color-batal1: #ad0000;
+    --color-reset: #707070;
+    --color-reset1: #7e7d7d;
+    --color-save: #05af0d;
+    --color-save2: #05970d;
+    /* --font-base: "Bai Jamjuree"; */
+}
+
+.text-brand {
+    color: var(--color-brand);
+}
+.text-brands {
+    color: var(--color-base);
+}
+
+.bg-base {
+    background-color: #fff;
+    color: #000000;
+}
+.dropdown-menu  {
+    background-color: #035661;
+    color: #fff;
+}
+.dropdown-menu .dropdown-item  {
+    color: #fff;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #035661;
+    background-color: var(--color-brand2);
+}
+.card .card-header a{
+    text-decoration: none;
+    color: var(--color-base);
+}
+
+.cards{
+    background-image: linear-gradient(rgb(17, 141, 79),rgba(3, 76, 82));
+    border-radius: 8px;
+    color: #ffffff;
+    border:  #c90000;
+}
+.cardss {
+    font-weight: 700;
+    position: relative;
+}
+
+.cardss::after {
+    content: "";
+    width: 10%;
+    height: 17%;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: -33%;
+    transition: all 0.4s;
+}
+.cardss:hover::after {
+    height: 177%;
+    width: 10%;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+/* NAVBAR */
+.navbar {
+    
+    background-color: var(--color-base);
+    color: #fff;
+}
+.navbar .nav-link {
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--color-brand2);
+    background-color:var(--color-base);
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.btn-tambah {
+    background-color: #035964;
+    color: #fff;
+}
+.btn-tambah:hover,
+.btn-tambah:focus {
+    background-color: var(--color-base);
+    color: var(--color-base);
+    border-color: #035964;
+    color: #fff;
+}
+
+.btn-batal {
+    background-color: var(--color-batal1);
+    border-color: var(--color-batal1);
+    color: var(--color-body);
+}
+.btn-batal:hover,
+.btn-batal:focus {
+    background-color: var(--color-batal);
+    color: var(--color-body);
+    border-color: var(--color-batal);
+}
+.btn-reset {
+    background-color: var(--color-reset);
+    border-color: var(--color-reset);
+    color: var(--color-body);
+}
+.btn-reset:hover,
+.btn-reset:focus {
+    background-color: var(--color-reset1);
+    color: var(--color-body);
+    border-color: var(--color-reset1);
+}
+.btn-save {
+    background-color:cornflowerblue;
+    border-color: var(--color-save);
+    color: var(--color-body);
+}
+.btn-save:hover,
+.btn-save:focus {
+    background-color: var(--color-save2);
+    color: var(--color-body);
+    border-color: var(--color-save2);
+}
+
+
+
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* CONTACT */
+#contact .form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
