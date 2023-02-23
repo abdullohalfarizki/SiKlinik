@@ -13,6 +13,7 @@ Pada aplikasi SiKlinik ini terdapat beberapa level user:
    - Data Obat
    - Data Rekam Medik
    - Data User
+   - Laporan
 
 2. Pasien
    Pada aplikasi ini pasien dapat melakukan registrasi akun dan login ke SiKlinik agar bisa mendapatkan nomor antrian dam melakukan cetak antrian. Pada aplikasi ini juga pasien dapat melakukan aktivitas update data pasien, ubah password dan reset password ke bawaan aplikasi yaitu 12345.

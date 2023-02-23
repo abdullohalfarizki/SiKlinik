@@ -47,7 +47,7 @@ include "proses/connect.php";
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <select name="jenis_kelamin" id="jenis_kelamin" class="form-select" aria-label="Default Select Example">
+                                            <select name="jk_dokter" id="jk_dokter" class="form-select" aria-label="Default Select Example">
                                                 <option selected hidden value="">Pilih Jenis Kelamin</option>
                                                 <option value="Laki-laki">Laki-laki</option>
                                                 <option value="Perempuan">Perempuan</option>
@@ -116,12 +116,12 @@ include "proses/connect.php";
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <select name="jenis_kelamin" value="<?= $row['jenis_kelamin'] ?>" id="jenis_kelamin" class="form-select" aria-label="Default Select Example">
+                                                <select name="jk_dokter" value="<?= $row['jk_dokter'] ?>" id="jk_dokter" class="form-select" aria-label="Default Select Example">
                                                     <option selected hidden value="">Pilih Jenis Kelamin</option>
                                                     <?php
                                                     $data = array("Laki-laki", "Perempuan");
                                                     foreach ($data as $key => $value) {
-                                                        if ($row['jenis_kelamin'] == $value) {
+                                                        if ($row['jk_dokter'] == $value) {
                                                             echo "<option value='$value' selected>$value</option>";
                                                         } else {
                                                             echo "<option value='$value'>$value</option>";
@@ -215,7 +215,7 @@ include "proses/connect.php";
                                         <tr>
                                             <th scope="row"><?= $no++; ?></th>
                                             <td><?= ucwords($row['nama_dokter']); ?></td>
-                                            <td><?= $row['jenis_kelamin']; ?></td>
+                                            <td><?= $row['jk_dokter']; ?></td>
                                             <td><?= $row['telp_dokter']; ?></td>
                                             <td><?= $row['alamat_dokter']; ?></td>
                                             <td class="">

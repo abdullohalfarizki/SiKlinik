@@ -4,7 +4,7 @@ include "connect.php";
 
 //Ambil data yang dikirim pada form
 $nama_dokter = (isset($_POST['nama_dokter'])) ? htmlentities($_POST['nama_dokter']) : "";
-$jenis_kelamin = (isset($_POST['jenis_kelamin'])) ? htmlentities($_POST['jenis_kelamin']) : "";
+$jk_dokter = (isset($_POST['jk_dokter'])) ? htmlentities($_POST['jk_dokter']) : "";
 $telp_dokter = (isset($_POST['telp_dokter'])) ? htmlentities($_POST['telp_dokter']) : "";
 $alamat_dokter = (isset($_POST['alamat_dokter'])) ? htmlentities($_POST['alamat_dokter']) : "";
 
@@ -19,7 +19,7 @@ if (!empty($_POST['simpan'])) {
                         window.history.back()
                     </script>';
     } else {
-        $query = mysqli_query($conn, "INSERT INTO dokter (nama_dokter, jenis_kelamin, telp_dokter, alamat_dokter) VALUES ('$nama_dokter','$jenis_kelamin','$telp_dokter','$alamat_dokter')");
+        $query = mysqli_query($conn, "INSERT INTO dokter (nama_dokter, jk_dokter, telp_dokter, alamat_dokter) VALUES ('$nama_dokter','$jk_dokter','$telp_dokter','$alamat_dokter')");
         if (!$query) {
             $message = '<script>
                         alert("Data Dokter Gagal ditambahkan!");
