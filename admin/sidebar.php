@@ -23,13 +23,6 @@
 
                         <?php if ($hasil['level'] == 1) { ?>
                             <li class="nav-item">
-                                <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'perawat') ? 'active'  : 'link-dark'; ?> ps-3" href="perawat"><i class="bi bi-person-fill-check"></i> Data Perawat</a>
-                            </li>
-                        <?php } ?>
-
-
-                        <?php if ($hasil['level'] == 1) { ?>
-                            <li class="nav-item">
                                 <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'dokter') ? 'active'  : 'link-dark'; ?> ps-3" href="dokter"><i class="bi bi-person-fill-check"></i> Data Dokter</a>
                             </li>
                         <?php } ?>
@@ -54,13 +47,13 @@
 
                         <?php if ($hasil['level'] == 1) { ?>
                             <li class="nav-item">
-                                <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'user') ? 'active'  : 'link-dark'; ?> ps-3" href="user"><i class="bi bi-person-fill-gear"></i> Data User</a>
+                                <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'laporan') ? 'active'  : 'link-dark'; ?> ps-3" href="laporan"><i class="bi bi-file-earmark-spreadsheet-fill"></i> Laporan</a>
                             </li>
                         <?php } ?>
 
                         <?php if ($hasil['level'] == 1) { ?>
                             <li class="nav-item">
-                                <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'laporan') ? 'active'  : 'link-dark'; ?> ps-3" href="laporan"><i class="bi bi-file-earmark-spreadsheet-fill"></i> Laporan</a>
+                                <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'user') ? 'active'  : 'link-dark'; ?> ps-3" href="user"><i class="bi bi-person-fill-gear"></i> Data User</a>
                             </li>
                         <?php } ?>
                     </ul>

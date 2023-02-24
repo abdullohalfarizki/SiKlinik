@@ -1,6 +1,6 @@
 <?php
 include "proses/connect.php";
-$query = mysqli_query($conn, "SELECT * FROM tb_user");
+$query = mysqli_query($conn, "SELECT * FROM user");
 while ($record = mysqli_fetch_array($query)) {
     $result[] = $record;
 }
@@ -299,7 +299,7 @@ while ($record = mysqli_fetch_array($query)) {
                     <?php
                     }
                     if (empty($result)) {
-                        echo "<div class='text-center border mt-5'>Tidak ada Data Pasein!</div>";
+                        echo "<div class='text-center border mt-5'>Tidak ada Data User!</div>";
                     } else {
                     ?>
                         <div class="table-responsive">
@@ -342,9 +342,9 @@ while ($record = mysqli_fetch_array($query)) {
                                             <td class="">
                                                 <div class="row">
                                                     <div class="col d-flex">
-                                                        <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalEdit<?= $row['id']; ?>"><i class="bi bi-pencil-square"></i>Edit</button>
-                                                        <button class="btn btn-danger btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalHapus<?= $row['id']; ?>"><i class="bi bi-trash"></i>Hapus</button>
-                                                        <button class="btn btn-secondary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalResetPassword<?= $row['id']; ?>"><i class="bi bi-key"></i>Reset</button>
+                                                        <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalEdit<?= $row['id']; ?>"><i class="bi bi-pencil-square"></i> Edit</button>
+                                                        <button class="btn btn-danger btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalHapus<?= $row['id']; ?>"><i class="bi bi-trash"></i> Hapus</button>
+                                                        <button class="btn btn-secondary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalResetPassword<?= $row['id']; ?>"><i class="bi bi-key"></i> Reset</button>
                                                     </div>
                                                 </div>
                                             </td>

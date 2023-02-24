@@ -15,6 +15,7 @@ if (!empty($_POST['hapus'])) {
     } else {
         $message =  '<script>
                     alert("Data Rekam Medik Gagal dihapus!");
+                    window.location = "../rekam";
                 </script>';
     }
 }

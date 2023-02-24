@@ -14,7 +14,7 @@ $alamat = (isset($_POST['alamat'])) ? htmlentities($_POST['alamat']) : "";
 
 //jika tombol simpan diklik lakukan update data
 if (!empty($_POST['simpan'])) {
-    $query = mysqli_query($conn, "UPDATE tb_user SET nama='$nama', username='$username', password='$password', jenis_kelamin='$jenis_kelamin', level='$level', telp='$telp', alamat='$alamat' WHERE id='$id' ");
+    $query = mysqli_query($conn, "UPDATE user SET nama='$nama', username='$username', password='$password', jenis_kelamin='$jenis_kelamin', level='$level', telp='$telp', alamat='$alamat' WHERE id='$id' ");
     if ($query) {
         $message = '<script>
                         alert("Data User Berhasil diupdate!");

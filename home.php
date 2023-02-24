@@ -267,55 +267,5 @@ $pasien = mysqli_num_rows($select);
     </div>
 </body>
 
-
-<!-- Ambil Antrian -->
-<!-- <section id="home" class="full-height px-5">
-        <div class="container">
-
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-                    <h1 class="display-4 fw-bold" data-aos="fade-up"><span class="text-brand">AMBIL ANTRIAN</span></h1>
-                </div>
-                <div class="col-lg-5 border m-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="pt-3">
-                        <h3>NOMOR ANTRIAN SAAT ANDA</h3>
-                        <h1 class="text-brand"><?= $pasien; ?></h1>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-2 col-md-2 border mt-4 m-2" data-aos="fade-up" data-aos-delay="500">
-                        <div class="py-4">
-                            <h3 class="text-brand"><?= --$pasien; ?></h3>
-                            <h6>Poli Umum</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 border mt-4 m-2" data-aos="fade-up" data-aos-delay="700">
-                        <div class="py-4">
-                            <h3 class="text-brand"><?= --$pasien; ?></h3>
-                            <h6>Poli Gigi</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 border mt-4 m-2" data-aos="fade-up" data-aos-delay="900">
-                        <div class="py-4">
-                            <h3 class="text-brand"><?= --$pasien; ?></h3>
-                            <h6>Poli Gigi</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 border mt-4 m-2" data-aos="fade-up" data-aos-delay="1100">
-                        <div class="py-4">
-                            <h3 class="text-brand"><?= --$pasien; ?></h3>
-                            <h6>Poli Gigi</h3>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="justify-content-center text-center">
-                <a class="btn btn-brand me-3" data-aos="fade-up" data-aos-delay="1300" data-bs-toggle="modal" data-bs-target="#exampleModal">Cetak</a>
-            </div>
-        </div>
-    </section> -->
-<!-- End Ambil Antrian -->
-<!-- //CONTENT WRAPPER -->
 <?php
 include "footer.php"; ?>

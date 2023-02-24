@@ -1,6 +1,6 @@
 <?php
 include "proses/connect.php";
-$query = mysqli_query($conn, "SELECT * FROM tb_user WHERE username ='$_SESSION[username_siklinik]'");
+$query = mysqli_query($conn, "SELECT * FROM user WHERE username ='$_SESSION[username_siklinik]'");
 while ($val = mysqli_fetch_array($query)) {
     $value[] = $val;
 }

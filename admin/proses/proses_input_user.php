@@ -13,7 +13,7 @@ $alamat = (isset($_POST['alamat'])) ? htmlentities($_POST['alamat']) : "";
 
 //jika tombol simpan diklik lakukan pengecekan username
 if (!empty($_POST['simpan'])) {
-    $select = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username'");
+    $select = mysqli_query($conn, "SELECT * FROM user WHERE username = '$username'");
     if (mysqli_num_rows($select) > 0) {
         $message = '<script>
                         alert("Username Sudah Digunakan!");
@@ -21,7 +21,7 @@ if (!empty($_POST['simpan'])) {
                     </script>';
     } else {
         //jika username belum digunakan(tidak daka di database) lakukan query untuk menambahkan user baru ke database
-        $query = mysqli_query($conn, "INSERT INTO tb_user (nama, username, password, jenis_kelamin, level, telp, alamat) VALUES ('$nama','$username','$password','$jenis_kelamin','$level','$telp','$alamat')");
+        $query = mysqli_query($conn, "INSERT INTO user (nama, username, password, jenis_kelamin, level, telp, alamat) VALUES ('$nama','$username','$password','$jenis_kelamin','$level','$telp','$alamat')");
         if (!$query) {
             $message = '<script>
                         alert("Data User Gagal ditambahkan!");

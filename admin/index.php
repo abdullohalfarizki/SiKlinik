@@ -5,17 +5,6 @@ session_start();
 if (isset($_GET['x']) && $_GET['x'] == 'home') {
     $page = "home.php";
     include "main.php";
-} else if (isset($_GET['x']) && $_GET['x'] == 'perawat') {
-    if ($_SESSION['level_siklinik'] == 1) {
-        $page = "perawat.php";
-        include "main.php";
-    } else { ?>
-        <script>
-            alert('Anda tidak memiliki akses !');
-            window.location = 'main.php';
-        </script>
-    <?php
-    }
 } else if (isset($_GET['x']) && $_GET['x'] == 'pasien') {
     if ($_SESSION['level_siklinik'] == 1) {
         $page = "pasien.php";
@@ -52,6 +41,28 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
 } else if (isset($_GET['x']) && $_GET['x'] == 'rekam') {
     if ($_SESSION['level_siklinik'] == 1) {
         $page = "rekam.php";
+        include "main.php";
+    } else { ?>
+        <script>
+            alert('Anda tidak memiliki akses !');
+            window.location = 'main.php';
+        </script>
+    <?php
+    }
+} else if (isset($_GET['x']) && $_GET['x'] == 'pembayaran') {
+    if ($_SESSION['level_siklinik'] == 1) {
+        $page = "pembayaran.php";
+        include "main.php";
+    } else { ?>
+        <script>
+            alert('Anda tidak memiliki akses !');
+            window.location = 'main.php';
+        </script>
+    <?php
+    }
+} else if (isset($_GET['x']) && $_GET['x'] == 'laporan') {
+    if ($_SESSION['level_siklinik'] == 1) {
+        $page = "laporan.php";
         include "main.php";
     } else { ?>
         <script>

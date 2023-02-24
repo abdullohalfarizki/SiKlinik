@@ -6,7 +6,7 @@ $id = (isset($_POST['id']) ? htmlentities($_POST['id']) : "");
 
 //Jika tombol hapus diklik lakukan query delete data user berdasarkan id user
 if (!empty($_POST['hapus'])) {
-    $query = mysqli_query($conn, "DELETE FROM tb_user WHERE id='$id'");
+    $query = mysqli_query($conn, "DELETE FROM user WHERE id='$id'");
     if ($query) {
         $message = '<script>
                         alert("Data User Berhasil dihapus!");
