@@ -39,6 +39,9 @@ INSTALASI APLIKASI
 - Cari file database pada folder database di aplikasi
 - Import database
 
+DEMO APLIKASI + INSTALASI
+http://youtube.
+
 url untuk pasien: http://localhost/siklinik
 url untuk admin: http://localhost/siklinik/admin/
 
