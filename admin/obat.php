@@ -187,8 +187,8 @@ include "proses/connect.php";
                                             <td class="">
                                                 <div class="row">
                                                     <div class="col d-flex">
-                                                        <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalEdit<?= $row['id_obat']; ?>"><i class="bi bi-pencil-square"></i> Edit</button>
-                                                        <button class="btn btn-danger btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalHapus<?= $row['id_obat']; ?>"><i class="bi bi-trash"></i> Hapus</button>
+                                                        <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalEdit<?= $row['id_obat']; ?>"><i class="bi bi-pencil-square"></i> </button>
+                                                        <button class="btn btn-danger btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalHapus<?= $row['id_obat']; ?>"><i class="bi bi-trash"></i> </button>
                                                     </div>
                                                 </div>
                                             </td>

@@ -6,7 +6,7 @@ $id = (isset($_POST['id']) ? htmlentities($_POST['id']) : "");
 
 //Jika tombol hapus diklik lakukan query update password user berdasarkan id user
 if (!empty($_POST['reset'])) {
-    $query = mysqli_query($conn, "UPDATE tb_user SET password=md5('12345') WHERE id='$id'");
+    $query = mysqli_query($conn, "UPDATE user SET password=md5('12345') WHERE id='$id'");
     if ($query) {
         $message = '<script>
                         alert("Password Berhasil di Reset!");
@@ -15,6 +15,7 @@ if (!empty($_POST['reset'])) {
     } else {
         $message =  '<script>
                     alert("Password Gagal di Reset!");
+                    window.location = "../user";
                 </script>';
     }
 }

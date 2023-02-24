@@ -39,8 +39,8 @@ INSTALASI APLIKASI
 - Cari file database pada folder database di aplikasi
 - Import database
 
-url untuk pasien: http://siklinik
-url untuk admin: http://siklinik/admin/
+url untuk pasien: http://localhost/siklinik
+url untuk admin: http://localhost/siklinik/admin/
 
 Akun Admin:
 

@@ -99,10 +99,9 @@ while ($record = mysqli_fetch_array($query)) {
                                                 <div class="form-floating mb-3">
                                                     <select name="level" id="level" class="form-select" aria-label="Default Select Example">
                                                         <option selected hidden value="">Pilih Level User</option>
-                                                        <option value="1">Adminnistrator</option>
-                                                        <option value="2">Perawat</option>
-                                                        <option value="3">Dokter</option>
-                                                        <option value="4">Kasir</option>
+                                                        <option value="1">Admin</option>
+                                                        <option value="2">Dokter</option>
+                                                        <option value="3">Kasir</option>
                                                     </select>
                                                     <label for="floatingInput">Level User</label>
                                                     <div class="invalid-feedback">
@@ -199,7 +198,7 @@ while ($record = mysqli_fetch_array($query)) {
                                                     <div class="form-floating mb-3">
                                                         <select name="level" id="level" class="form-select" aria-label="Default Select Example">
                                                             <?php
-                                                            $data = array("Administrator", "Perawat", "Dokter", "Kasir");
+                                                            $data = array("Admin", "Dokter", "Kasir");
                                                             foreach ($data as $key => $value) {
                                                                 if ($row['level'] == ++$key) {
                                                                     echo "<option value='$key' selected>$value</option>";
@@ -329,12 +328,10 @@ while ($record = mysqli_fetch_array($query)) {
                                             <td><?= ucwords($row['alamat']); ?></td>
                                             <td>
                                                 <?php if ($row['level'] == 1) {
-                                                    echo "Administrator";
+                                                    echo "Admin";
                                                 } elseif ($row['level'] == 2) {
-                                                    echo "Perawat";
-                                                } elseif ($row['level'] == 3) {
                                                     echo "Dokter";
-                                                } elseif ($row['level'] == 4) {
+                                                } elseif ($row['level'] == 3) {
                                                     echo "Kasir";
                                                 } ?>
                                             </td>
@@ -342,9 +339,9 @@ while ($record = mysqli_fetch_array($query)) {
                                             <td class="">
                                                 <div class="row">
                                                     <div class="col d-flex">
-                                                        <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalEdit<?= $row['id']; ?>"><i class="bi bi-pencil-square"></i> Edit</button>
-                                                        <button class="btn btn-danger btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalHapus<?= $row['id']; ?>"><i class="bi bi-trash"></i> Hapus</button>
-                                                        <button class="btn btn-secondary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalResetPassword<?= $row['id']; ?>"><i class="bi bi-key"></i> Reset</button>
+                                                        <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalEdit<?= $row['id']; ?>"><i class="bi bi-pencil-square"></i></button>
+                                                        <button class="btn btn-danger btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalHapus<?= $row['id']; ?>"><i class="bi bi-trash"></i> </button>
+                                                        <button class="btn btn-secondary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#ModalResetPassword<?= $row['id']; ?>"><i class="bi bi-key"></i> </button>
                                                     </div>
                                                 </div>
                                             </td>

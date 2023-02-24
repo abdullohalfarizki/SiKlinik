@@ -15,7 +15,7 @@
                             <a class="nav-link <?php echo ((isset($_GET['x']) && $_GET['x'] == 'home') || !isset($_GET['x'])) ? 'active'  : 'link-dark'; ?>  ps-3" aria-current="page" href="home"><i class="bi bi-house-fill"></i> Home</a>
                         </li>
 
-                        <?php if ($hasil['level'] == 1) { ?>
+                        <?php if ($hasil['level'] == 1 || $_SESSION['level_siklinik'] == 3) { ?>
                             <li class="nav-item">
                                 <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'pasien') ? 'active'  : 'link-dark'; ?> ps-3" href="pasien"><i class="bi bi-person-fill-add"></i> Data Pasien</a>
                             </li>
@@ -27,25 +27,25 @@
                             </li>
                         <?php } ?>
 
-                        <?php if ($hasil['level'] == 1) { ?>
+                        <?php if ($hasil['level'] == 1 || $_SESSION['level_siklinik'] == 2) { ?>
                             <li class="nav-item">
                                 <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'obat') ? 'active'  : 'link-dark'; ?> ps-3" href="obat"><i class="bi bi-droplet-half"></i> Data Obat</a>
                             </li>
                         <?php } ?>
 
-                        <?php if ($hasil['level'] == 1) { ?>
+                        <?php if ($hasil['level'] == 1 || $_SESSION['level_siklinik'] == 2) { ?>
                             <li class="nav-item">
                                 <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'rekam') ? 'active'  : 'link-dark'; ?> ps-3" href="rekam"><i class="bi bi-binoculars-fill"></i> Rekam Medik</a>
                             </li>
                         <?php } ?>
 
-                        <?php if ($hasil['level'] == 1) { ?>
+                        <?php if ($hasil['level'] == 1 || $_SESSION['level_siklinik'] == 3) { ?>
                             <li class="nav-item">
                                 <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'pembayaran') ? 'active'  : 'link-dark'; ?> ps-3" href="pembayaran"><i class="bi bi-credit-card-2-back"></i> Pembayaran</a>
                             </li>
                         <?php } ?>
 
-                        <?php if ($hasil['level'] == 1) { ?>
+                        <?php if ($hasil['level'] == 1 || $_SESSION['level_siklinik'] == 2 || $_SESSION['level_siklinik'] == 3) { ?>
                             <li class="nav-item">
                                 <a class="nav-link <?php echo (isset($_GET['x']) && $_GET['x'] == 'laporan') ? 'active'  : 'link-dark'; ?> ps-3" href="laporan"><i class="bi bi-file-earmark-spreadsheet-fill"></i> Laporan</a>
                             </li>

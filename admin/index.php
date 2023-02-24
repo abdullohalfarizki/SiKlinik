@@ -6,7 +6,7 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
     $page = "home.php";
     include "main.php";
 } else if (isset($_GET['x']) && $_GET['x'] == 'pasien') {
-    if ($_SESSION['level_siklinik'] == 1) {
+    if ($_SESSION['level_siklinik'] == 1 || $_SESSION['level_siklinik'] == 3) {
         $page = "pasien.php";
         include "main.php";
     } else { ?>
@@ -28,7 +28,7 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
     <?php
     }
 } else if (isset($_GET['x']) && $_GET['x'] == 'obat') {
-    if ($_SESSION['level_siklinik'] == 1) {
+    if ($_SESSION['level_siklinik'] == 1 || $_SESSION['level_siklinik'] == 2) {
         $page = "obat.php";
         include "main.php";
     } else { ?>
@@ -39,7 +39,7 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
     <?php
     }
 } else if (isset($_GET['x']) && $_GET['x'] == 'rekam') {
-    if ($_SESSION['level_siklinik'] == 1) {
+    if ($_SESSION['level_siklinik'] == 1 || $_SESSION['level_siklinik'] == 2) {
         $page = "rekam.php";
         include "main.php";
     } else { ?>
@@ -50,7 +50,7 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
     <?php
     }
 } else if (isset($_GET['x']) && $_GET['x'] == 'pembayaran') {
-    if ($_SESSION['level_siklinik'] == 1) {
+    if ($_SESSION['level_siklinik'] == 1 || $_SESSION['level_siklinik'] == 3) {
         $page = "pembayaran.php";
         include "main.php";
     } else { ?>
@@ -61,7 +61,7 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
     <?php
     }
 } else if (isset($_GET['x']) && $_GET['x'] == 'laporan') {
-    if ($_SESSION['level_siklinik'] == 1) {
+    if ($_SESSION['level_siklinik'] == 1 || $_SESSION['level_siklinik'] == 2 || $_SESSION['level_siklinik'] == 3) {
         $page = "laporan.php";
         include "main.php";
     } else { ?>
